@@ -16,7 +16,6 @@ if [ -f "$key_file" ]; then
 
 	mkdir "$HOME/.ssh"
 	cp "$key_file" "$HOME/.ssh/id_rsa"
-	cat $HOME/.ssh/id_rsa
 	ssh -vvvv -oStrictHostKeyChecking=no -T git@github.com
 	exit 0
 else
